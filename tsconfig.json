@@ -30,7 +30,8 @@
     // "baseUrl": "./",                                  /* Specify the base directory to resolve non-relative module names. */
     "paths": {
       "@dyna/cli": [ "./libraries/cli/src" ],
-      "@dyna/core": [ "./libraries/core/src" ]
+      "@dyna/core": [ "./libraries/core/src" ],
+      "@dyna/http-server": [ "./libraries/http-server/src" ],
     },
     // "rootDirs": [],                                   /* Allow multiple folders to be treated as one when resolving modules. */
     // "typeRoots": [],                                  /* Specify multiple folders that act like `./node_modules/@types`. */
