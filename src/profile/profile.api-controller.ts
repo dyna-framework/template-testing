@@ -7,6 +7,7 @@ export class ProfileApiController extends BaseApiController {
   @Get()
   public index() {
     console.log('profile.api-controller.ts -> index');
+    return 'profile.api-controller.ts -> index';
   }
 
 }

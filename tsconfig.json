@@ -27,13 +27,13 @@
     "module": "commonjs",                                /* Specify what module code is generated. */
     // "rootDir": "./",                                  /* Specify the root folder within your source files. */
     // "moduleResolution": "node",                       /* Specify how TypeScript looks up a file from a given module specifier. */
-    // "baseUrl": "./",                                  /* Specify the base directory to resolve non-relative module names. */
+    "baseUrl": "./",
     "paths": {
       "@dyna/cli": [ "./libraries/cli/src" ],
       "@dyna/core": [ "./libraries/core/src" ],
       "@dyna/env": [ "./libraries/env/src" ],
       "@dyna/http-server": [ "./libraries/http-server/src" ],
-      "@dyna/http-api-router": [ "libraries/http-api-router/src" ]
+      "@dyna/http-api-router": [ "./libraries/http-api-router/src" ]
     },
     // "rootDirs": [],                                   /* Allow multiple folders to be treated as one when resolving modules. */
     // "typeRoots": [],                                  /* Specify multiple folders that act like `./node_modules/@types`. */
