@@ -1,13 +1,11 @@
-import { BaseApiController } from '@dyna/http-api-router';
-import { ApiController, Get } from '@dyna/http-api-router';
+import { BaseHttpController } from '@dyna/http-router'
+import { HttpController, Get } from '@dyna/http-router'
 
-@ApiController()
-export class ProfileApiController extends BaseApiController {
-
+@HttpController()
+export class ProfileApiController extends BaseHttpController {
   @Get()
-  public index() {
-    console.log('profile.api-controller.ts -> index');
-    return 'profile.api-controller.ts -> index';
+  index() {
+    console.log('profile.api-controller.ts -> index')
+    return 'profile.api-controller.ts -> <strong>index</strong>'
   }
-
 }

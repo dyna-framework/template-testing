@@ -13,6 +13,7 @@
     "caller": "^1.0.1",
     "dotenv": "^16.0.0",
     "module-alias": "^2.2.2",
+    "ts-ext-decorators": "^1.0.2",
     "url-pattern": "^1.0.3"
   },
   "devDependencies": {

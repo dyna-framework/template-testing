@@ -1,15 +1,18 @@
-import { BaseApiController, Post, Put } from '@dyna/http-api-router';
-import { ApiController, Get, Method } from '@dyna/http-api-router';
+import { Any, BaseHttpController, NativeRequest, NativeResponse, Post, Put, Response } from '@dyna/http-router'
+import { HttpController, Get, Method } from '@dyna/http-router'
+import { IncomingMessage, ServerResponse } from 'http'
 
-@ApiController()
-export class HomeApiController extends BaseApiController {
-
-  @Put('/')
-  @Post('/home')
-  @Method('any')
-  public index() {
-    console.log('home.api-controller.ts -> index');
-    return 'home.api-controller.ts -> index';
+@HttpController()
+export class HomeApiController extends BaseHttpController {
+  @Get()
+  index(@NativeRequest() req: IncomingMessage) {
+    console.log('home.api-controller.ts -> index')
+    const d = { test: { prueba: 'con una respuesta' } }
+    return (d as any).test.prueba
   }
 
+  @Get()
+  users() {
+    return [{ id: 1, name: 'FreeIntelligence' }]
+  }
 }
