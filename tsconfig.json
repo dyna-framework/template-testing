@@ -33,7 +33,8 @@
       "@dyna/core": [ "./libraries/core/src" ],
       "@dyna/env": [ "./libraries/env/src" ],
       "@dyna/http-server": [ "./libraries/http-server/src" ],
-      "@dyna/http-router": [ "./libraries/http-router/src" ]
+      "@dyna/http-router": [ "./libraries/http-router/src" ],
+      "@dyna/http-router-errors": [ "./libraries/http-router-errors/src" ]
     },
     // "rootDirs": [],                                   /* Allow multiple folders to be treated as one when resolving modules. */
     // "typeRoots": [],                                  /* Specify multiple folders that act like `./node_modules/@types`. */
